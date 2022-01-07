@@ -13,3 +13,5 @@ Description:
 - Simply open the html file to use the program.
 
 - To confirm the program works for all test cases, click the show test cases button on the form.
+
+- Untested on browsers outside of chrome.
