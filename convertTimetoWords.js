@@ -146,7 +146,7 @@ function generateTestCases() {
     ]
 
     //cycle through all the test cases
-    for (var i = 0; i < 12; i++) {
+    for (var i = 0; i < testCases.length; i++) {
         //create a new row each iteration
         let row = document.createElement("tr");
 
