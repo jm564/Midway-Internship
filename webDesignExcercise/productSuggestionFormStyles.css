@@ -1,0 +1,31 @@
+#product-suggestion-form{
+    display:none;
+    flex-basis: 100%;
+    flex-flow:column nowrap;
+    justify-content:center;
+    align-items: center;
+}
+
+
+#first-name-prod-input{
+    align-self: start;
+    text-align: center;
+}
+
+
+#last-name-prod-input{
+    align-self: end;
+    text-align: center;
+}
+
+#email-address-prod-input{
+    align-self:center;
+    text-align: center;
+    width:100%;
+}
+
+#description-input{
+    text-align: center;
+    width: 8cm;
+    height: 2cm;
+}

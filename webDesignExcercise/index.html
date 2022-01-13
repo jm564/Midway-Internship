@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback</title>
+    <! main stylesheet >
+    <link rel="stylesheet" type="text/css" href="multipleFeedbackformTool.css">
+    <! product suggestion form stylesheet >
+    <link rel="stylesheet" type="text/css" href="productSuggestionFormStyles.css">
+    <! contact form stylesheet >
+    <link rel="stylesheet" type="text/css" href="contactFormStyles.css">
+    <! script >
+    <script src="multipleFeedbackFormTool.js"></script>
+</head>
+
+
+
+<body>
+<div id="body">
+    <header>
+
+
+        <div id="header-content">
+            <img src="/resources/midwayusa-logo-v2.svg" id="header-logo" alt="Midway USA Logo">
+        </div>
+
+
+
+        <div id="nav-bar">
+            <a class="nav-bar-link" href="">Shop</a>
+            <a class="nav-bar-link" href="">New Arrivals</a>
+            <a class="nav-bar-link" href="">Free Shipping</a>
+            <a class="nav-bar-link" href="">Sale and Clearance</a>
+        </div>
+
+
+    </header>
+
+
+
+    <div id="center">
+        <div class="contents" id="contents-body">
+
+
+            <div id="landing-container">
+                <div id="landing-text-background">
+                    <h1 id="landing-text">Let's Talk</h1>
+                </div>
+            </div>
+
+
+            <div id="form-button-container">
+                <button class="form-select-button" id="suggestion-button" onclick="showSuggestionForm()">Suggestions?</button>
+                <button class="form-select-button" id="contact-button" onclick="showContactForm()">Contact Us</button>
+            </div>
+
+
+            <div id="form-container">
+
+
+
+                <!---prod suggestion form--->
+                <form id="product-suggestion-form">
+                    <div class="form-description-container">
+                        <div class="form-description-background">
+                            <p class="form-description-text">
+                                 Can't find a product? Let us know here.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contents">
+
+                        <div class="input-container">
+                            <div class="first-name-container">
+                                <input type="text" id="first-name-prod-input" class="input-description" placeholder="first name" onfocus="this.value=''" required>
+                            </div>
+                            <div class="last-name-container">
+                                <input type="text" id="last-name-prod-input"  class="input-description"  placeholder="last name" onfocus="this.value=''" required>
+                            </div>
+                        </div>
+
+                        <div class="input-container">
+                            <input type="email" id="email-address-prod-input"  class="input-description"  placeholder="email@email.com" onfocus="this.value=''" required>
+                        </div>
+
+                        <div class="input-container" id="prod-description-container">
+                            <textarea id="description-input" class="input-description" onfocus="clearContents(this)" placeholder="Please give as much detail as possible" required></textarea>
+                        </div>
+
+                        <div class="input-container">
+                            <input type="button" id="submit-product-form" value="submit" onclick="submitSuccess('product-suggestion-form')">
+                        </div>
+                        <div class = "input-container">
+                            <p class="error-text">
+                                Form Submission is Invalid
+                            </p>
+                        </div>
+                    </div>
+                </form>
+
+
+
+                <!---contact form--->
+                <form id="contact-form">
+                    <div class="form-description-container">
+                        <div class="form-description-background">
+                            <p class="form-description-text">
+                                Send us a message below!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contents">
+
+                        <div class="input-container">
+                           <div class="first-name-container">
+                              <input type="text" id="first-name-contact-input" class="input-description" placeholder="first name" onfocus="this.value=''" required>
+                          </div>
+                          <div class="last-name-container">
+                              <input type="text" id="last-name-contact-input"  class="input-description"  placeholder="last name" onfocus="this.value=''" required>
+                          </div>
+                        </div>
+
+                        <div class="input-container">
+                            <input type="email" id="email-address-contact-input"  class="input-description"  placeholder="email@email.com" onfocus="this.value=''" required>
+                        </div>
+
+                        <p>Reason for contacting:</p>
+
+                        <div class="input-container" id="contact-reason">
+                            <div id="order-question-block" onclick="controlFormButtons(0)">
+                                <p id="order-q-text">
+                                    Order Question
+                                </p>
+                            </div>
+                            <div id="website-feedback-block" onclick="controlFormButtons(1)">
+                                <p>
+                                    Website Feedback
+                                </p>
+                            </div>
+                            <div id="trouble-finding-product-block" onclick="controlFormButtons(2)">
+                                <p>
+                                    Product Feedback
+                                </p>
+                            </div>
+                        </div>
+
+                        <div id="contact-message">
+                            <textarea id="message-input" class="input-description" onfocus="clearContents(this)" placeholder="Send us a message" required></textarea>
+                        </div>
+
+                        <div class="input-container">
+                            <input type="button" id="submit-contact-form" value="submit" onclick="submitSuccess('contact-form')">
+                        </div>
+
+                        <div class="input-container">
+                            <p class="error-text">
+                                Form Submission is Invalid
+                            </p>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="contents" id="submission-success-form">
+                    <div class="form-description-container">
+                        <div>
+                            <p>
+                                Message sent!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div id="footer-content">
+        </div>
+    </footer>
+</div>
+</body>
+</html>

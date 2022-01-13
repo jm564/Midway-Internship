@@ -1,0 +1,185 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body{
+    display:flex;
+    flex-flow:column nowrap;
+}
+
+header{
+    display:flex;
+    flex-flow: column nowrap;
+    order:0;
+    justify-content:center;
+    align-content: center;
+}
+
+textarea{
+    resize: none;
+    font-family: inherit;
+}
+
+#header-content{
+    order: 0;
+    justify-content: space-around;
+}
+
+#header-logo{
+    aspect-ratio: auto 300/128;
+    padding: 1%;
+    width: 5cm;
+}
+
+#nav-bar{
+    order:1;
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content:center;
+    background-color: lightsteelblue;
+    height: 0.75cm;
+}
+
+.nav-bar-link{
+    align-self: center;
+    background-color: lightsteelblue;
+    color: black;
+    padding-inline: 8%;
+    justify-self: center;
+}
+
+.nav-bar-link:link{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-bar-link:hover{
+    background-color: darkgrey;
+}
+
+#center{
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:center;
+    align-content:center;
+    padding-top:2cm;
+}
+.contents{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items:center;
+}
+#contents-body{
+    background-color: lightsteelblue;
+    padding-top: 2cm;
+    width:10cm;
+    height:12cm;
+}
+
+#landing-container{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+#landing-text-background{
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    width: 5cm;
+    height: 3cm;
+    opacity: 50%;
+}
+#landing-text{
+    text-align:center;
+    font-size: 25px;
+}
+
+#form-button-container{
+    order:0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+.form-select-button{
+    height:1cm;
+    width:3cm;
+}
+
+#form-container{
+    order:1;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:center;
+    width: 100%;
+    height: 100%;
+}
+
+.form-description-container{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    justify-self:center;
+    order:0;
+}
+.form-description-background{
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    width: 5cm;
+    height: 2cm;
+}
+.form-description-text{
+    text-align: center;
+    font-size:20px;
+    opacity:50%;
+}
+
+.input-container{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.input-description{
+    font-size:15px;
+    text-decoration-color: rgba(234, 240, 246, 0.8);
+}
+
+.first-name-container{
+    order:0;
+    display:flex;
+    flex-flow: row nowrap;
+}
+.last-name-container{
+    order:1;
+    display:flex;
+    flex-flow: row nowrap;
+}
+
+#submission-success-form{
+    display:none;
+}
+
+.error-text{
+    display:none;
+    color:crimson;
+    text-align:center;
+}

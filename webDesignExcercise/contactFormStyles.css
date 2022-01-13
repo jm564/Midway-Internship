@@ -1,0 +1,64 @@
+#contact-form{
+    display:none;
+    flex-basis: 100%;
+    flex-flow:column nowrap;
+    justify-content:center;
+}
+
+
+#first-name-contact-input{
+    align-self: center;
+    text-align: center;
+}
+
+
+#last-name-contact-input{
+    align-self: center;
+    text-align: center;
+
+}
+
+#email-address-contact-input{
+    align-self: center;
+    text-align: center;
+    width:100%;
+}
+
+#message-input{
+    text-align: center;
+    width: 6cm;
+    height: 2cm;
+}
+
+#order-question-block{
+    display: flex;
+    flex-flow:column nowrap;
+    width:3cm;
+    height:1cm;
+    text-align: center;
+    border: 1px solid black;
+    justify-content:center;
+}
+#order-question-block:hover{
+    background-color: darkgrey;
+}
+
+#website-feedback-block{
+    width:3cm;
+    height:1cm;
+    border: 1px solid black;
+    text-align: center;
+}
+#website-feedback-block:hover{
+    background-color: darkgrey;
+}
+
+#trouble-finding-product-block{
+    width:3cm;
+    height:1cm;
+    border: 1px solid black;
+    text-align: center;
+}
+#trouble-finding-product-block:hover{
+    background-color: darkgrey;
+}
