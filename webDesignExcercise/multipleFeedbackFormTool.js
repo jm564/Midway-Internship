@@ -54,7 +54,6 @@ function submitSuccess(thisForm)
                 control ++;//simplest way to check for text in the form
             }
         }
-        console.log(control);
         if(control >= formObjs.length && validateEmail(formObjs[2].value))//-1 to account for the submit button
         {
             hideAllForms();
